@@ -1,5 +1,9 @@
 # Documentation : GraphQL et son intégration dans ce projet
 
+### ENONCE DU TP
+Concevoir une API GraphQL pour gérer une entité appelée « Book ». L’objectif est de créer un schéma GraphQL permettant de faire des requêtes et des mutations sur les livres, comme récupérer des informations, ajouter de nouveaux livres, ou mettre à jour des données existantes.
+
+
 ## 1. Qu'est-ce que GraphQL ?
 GraphQL est un langage de requête pour les API, développé par Facebook. Il permet aux clients de demander exactement les données dont ils ont besoin, ni plus ni moins, via un schéma typé et une seule URL d'accès.
 
