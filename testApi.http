@@ -1,0 +1,39 @@
+### Fetch all books
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "query { books { id title author publishedDate price } }"
+}
+
+### Fetch a book by ID
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "query { bookById(id: 4) { id title author publishedDate price } }"
+}
+
+### Create a new book
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "mutation { createBook(input: { title: \"jojo bizarre adventure\", author: \"araki\", publishedDate: \"1980-11-06\", price: 275.99 }) { id title author publishedDate price } }"
+}
+
+### Update an existing book
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "mutation { updateBook(id: 1, input: { title: \"Updated Title\", author: \"Updated Author\", publishedDate: \"2025-11-06\", price: 12.99 }) { id title author publishedDate price } }"
+}
+
+### Delete a book
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "mutation { deleteBook(id: 4) }"
+}
